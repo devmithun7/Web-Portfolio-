@@ -1,10 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React, { useState } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import React from "react";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
@@ -17,54 +14,77 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
-import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Data Engineering",
+    title: "AI Health-Care System",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+      "A user-friendly, voice-activated healthcare application providing personalized medication suggestions and real-time diagnostic support based on user's symptoms and medical history.",
+    stack: [{ name: "Python" }, { name: "Snowflake" }, { name: "Airflow" }, { name: "Streamlit" }, { name: "LLM" }, { name: "AWS" },{ name: "Beautiful soup" }],
+    image: "/assets/work/photo22.png",
+    live: "https://www.youtube.com/watch?v=_N4aIHl-ldM",
+    github: "https://github.com/devmithun7/AI-healthcare-System",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
+    category: "BI",
+    title: "BI Implementation for Food Inspection Analysis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+      "Implemented an ETL pipeline and star schema to integrate and analyze Dallas and Chicago food inspection data, enabling accurate processing and insightful visualizations for improved food safety.",
+    stack: [{ name: "Python" }, { name: "Snowflake" }, { name: "Azure Data Factory" }, { name: "Tableau" }, { name: "SQL" }],
+    image: "/assets/work/photo31.png",
+    live: "https://public.tableau.com/app/profile/dev.mithunisvar/viz/IowaLiquorSales_17237708067000/Dashboard1",
+    github: "https://github.com/devmithun7/BI-Implementation-for-Food-Inspection-Analysis",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 3",
+    category: "Machine Learning",
+    title: "USA Accident Severity Prediction",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+      "A ML project that classifies 7 million records into four severity levels, utilizing feature engineering, hyperparameter tuning, evaluation metrics, and dashboards to support data-driven safety and prevention strategies.",
+    stack: [{ name: "Machine Learning" }, { name: "Python" }, { name: "NLP" }, { name: "Tableau" }],
+    image: "/assets/work/mlsci.png",
+    live: "https://public.tableau.com/app/profile/dev.mithunisvar/viz/USARoadAccidents2017to2023/Dashboard2",
+    github: "https://github.com/arnavvaryani/us-accident-prediction",
+  },
+  {
+    num: "04",
+    category: "Data Science",
+    title: "Power Consumption prediction",
+    description:
+      "A regression project forecasting Tetouan city's power consumption using tree-based models like Decision Tree, Random Forest, AdaBoost, and XGBoost, featuring feature importance analysis and performance evaluation with MAE, RMSE, MSE, and R-squared metrics.",
+    stack: [{ name: "Python" }, { name: "Pandas" }, { name: "Scikit-Learn" }, { name: "Machine Learning" }],
+    image: "/assets/work/ml.png",
+    live: "https://link.springer.com/chapter/10.1007/978-981-99-1373-2_15",
+    github: "https://github.com/dhruvraj-singh-rawat/power-consumption-prediction",
+  },
+  {
+    num: "05",
+    category: "Data Engineering",
+    title: "E-commerce Advanced Analytics Infrastructure",
+    description:
+      "SoftCart’s hybrid platform combines on-premises and cloud databases with MySQL, MongoDB, Hadoop, Spark, Airflow, and Cognos Analytics to manage and analyze ecommerce data for business intelligence.",
+    stack: [{ name: "Python" }, { name: "Spark" }, { name: "Airflow" }, { name: "AWS" },  { name: "Hadoop" }, { name: "SQL" }],
+    image: "/assets/work/ibm-dataengineer.png",
+    live: "https://github.com/devmithun7/Empowering-E-commerce-Advanced-Analytics-Infrastructure",
+    github: "https://github.com/devmithun7/Empowering-E-commerce-Advanced-Analytics-Infrastructure",
+  },
+  {
+    num: "06",
+    category: "Data Science",
+    title: "NLP for Melatonin Side Effects",
+    description:
+      "Designed and implemented an NLP-driven workflow to preprocess and analyze product reviews, perform sentiment and text mining, and utilize machine learning models to predict optimal dosage selections for different age categories.",
+    stack: [{ name: "Natural Language Processing" }, { name: "Python" }, { name: "Sentiment Analysis" }],
+    image: "/assets/work/nlp.png",
+    live: "https://github.com/devmithun7/NLP-to-Understand-Side-effects-of-melatonin",
+    github: "https://github.com/devmithun7/NLP-to-Understand-Side-effects-of-melatonin",
   },
 ];
 
 const Work = () => {
-  const [project, setProject] = useState(projects[0]);
-
-  const handleSlideChange = (swiper) => {
-    // get current slide index
-    const currentIndex = swiper.activeIndex;
-    // update project state based on current slide index
-    setProject(projects[currentIndex]);
-  };
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -75,41 +95,43 @@ const Work = () => {
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
-              {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {project.num}
+        {/* Grid layout for project cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div key={index} className="bg-gray-800 p-6 rounded-lg">
+              {/* Project image */}
+              <div className="w-full h-[165px] mb-4 relative">
+                <Image
+                  src={project.image}
+                  fill
+                  className="object-cover rounded-lg"
+                  alt={project.title}
+                />
               </div>
-              {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
-              </h2>
-              {/* project description */}
-              <p className="text-white/60">{project.description}</p>
-              {/* stack */}
-              <ul className="flex gap-4">
-                {project.stack.map((item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-accent">
+              {/* Project info */}
+              <div className="flex-1">
+                <h2 className="text-2xl font-bold text-white mb-2">
+                  {project.num}. {project.title}
+                </h2>
+                <p className="text-white/70 mb-4">{project.description}</p>
+                {/* Stack */}
+                <ul className="flex flex-wrap gap-2 text-accent">
+                  {project.stack.map((item, index) => (
+                    <li key={index} className="whitespace-nowrap">
                       {item.name}
-                      {/* remove the last comma */}
                       {index !== project.stack.length - 1 && ","}
                     </li>
-                  );
-                })}
-              </ul>
-              {/* border */}
-              <div className="border border-white/20"></div>
-              {/* buttons */}
-              <div className="flex items-center gap-4">
-                {/* live project button */}
+                  ))}
+                </ul>
+              </div>
+              {/* Buttons */}
+              <div className="flex gap-4 mt-4">
+                {/* Live project button */}
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsArrowUpRight className="text-white text-xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live project</p>
@@ -117,12 +139,12 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                {/* github project button */}
+                {/* Github project button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Github repository</p>
@@ -132,40 +154,7 @@ const Work = () => {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="w-full xl:w-[50%]">
-            <Swiper
-              spaceBetween={30}
-              slidesPerView={1}
-              className="xl:h-[520px] mb-12"
-              onSlideChange={handleSlideChange}
-            >
-              {projects.map((project, index) => {
-                return (
-                  <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      {/* image */}
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={project.image}
-                          fill
-                          className="object-cover"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-              {/* slider buttons */}
-              <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-              />
-            </Swiper>
-          </div>
+          ))}
         </div>
       </div>
     </motion.section>
@@ -173,3 +162,5 @@ const Work = () => {
 };
 
 export default Work;
+
+
