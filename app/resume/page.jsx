@@ -25,11 +25,11 @@ const about = {
 // experience data
 const experience = {
   title: "My Experience",
-  description: "Software Engineer and Research Assistant with expertise in ETL pipeline development, data visualization, and machine learning for data-driven and optimization solutions.",
+  description: "Data Engineer and Research Assistant with expertise in ETL pipeline development, data visualization, and machine learning for data-driven and optimization solutions.",
   items: [
     {
       company: "LTIMindtree",
-      position: "Software Engineer",
+      position: "Data Engineer",
       duration: "2021 - 2022",
       description: "With a strong foundation in SQL, I developed efficient ETL pipelines, ensuring seamless data ingestion and quality control across diverse sources and cloud environments. Utilizing Tableau, I created interactive dashboards that delivered actionable insights from complex datasets. Over time, I integrated Python for developing predictive models and automating processes, applying machine learning techniques to drive data-driven decision-making and improve business outcomes.",
     },
