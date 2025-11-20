@@ -2,7 +2,9 @@
 
 import { FaPython, FaAws, FaDocker, FaDatabase, FaMicrosoft } from "react-icons/fa";
 import { SiTableau, SiPowerbi, SiSnowflake, SiAlteryx, SiApacheairflow, SiApache, SiOpenai } from "react-icons/si";
-
+import { FaPython, FaDatabase, FaAws, FaMicrosoft, FaDocker, FaGitAlt } from "react-icons/fa";
+import { SiTableau, SiPowerbi, SiSnowflake, SiAlteryx, SiApache, SiApacheairflow, SiOpenai, SiDbt, SiDatabricks, SiTerraform } from "react-icons/si";
+import { FaFileExcel } from "react-icons/fa6";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -25,13 +27,19 @@ const about = {
 // experience data
 const experience = {
   title: "My Experience",
-  description: "Data Engineer and Research Assistant with expertise in ETL pipeline development, data visualization, and machine learning for data-driven and optimization solutions.",
+  description: "Data Engineer with expertise in ETL pipeline development, data visualization, and machine learning for data-driven and optimization solutions.",
   items: [
+    {
+      company: " Boehringer Ingelheim",
+      position: "Data Analyst Intern",
+      duration: "Feb 2025 - Jun 2025",
+      description: "I work on turning messy data into something teams can actually use. Most of my experience sits across SQL, Tableau, DBT, Python, and Snowflake, where I build dashboards, clean datasets, and create reporting layers that teams rely on every day. I’ve built Tableau dashboards that consolidate dozens of KPIs into one view, set up DBT models to standardize data sources, and written Python and SQL tests to catch issues before they hit production. I also build Power BI and Excel reconciliation reports when governance or access tracking is needed. My focus is always the same: make the data clear, trustworthy, and ready for whoever needs it.",
+    }
     {
       company: "LTIMindtree",
       position: "Data Engineer",
       duration: "2021 - 2022",
-      description: "With a strong foundation in SQL, I developed efficient ETL pipelines, ensuring seamless data ingestion and quality control across diverse sources and cloud environments. Utilizing Tableau, I created interactive dashboards that delivered actionable insights from complex datasets. Over time, I integrated Python for developing predictive models and automating processes, applying machine learning techniques to drive data-driven decision-making and improve business outcomes.",
+      description: "I work on building reliable data pipelines that move and transform data at scale. Most of my work revolves around SQL, AWS, and PySpark, where I handle ingestion, cleaning, and modeling across different cloud sources. I focus on making pipelines fast, simple, and dependable by automating validation, optimizing transformations, and structuring data so teams can actually use it. Over time, I’ve built out analytics ready layers, automated workflows with Python, and supported teams with clean, consistent datasets that power reporting and product decisions.",
     },
     {
       company: "Anna University",
@@ -60,7 +68,7 @@ const education = {
       duration: "2022-2023",
     },
     {
-      degree: "Bachelor Engineering",
+      degree: "Bachelor of Engineering",
       program: "Electrical Engineering",
       institution: "Anna University",
       duration: "2017 - 2021",
@@ -82,7 +90,7 @@ const certifications = {
       specialization: "Cloud Infrastructure and Data Engineering",
     },
     {
-      degree: "Tableau Certified Desktop Specialist",
+      degree: "Snowflake SnowPro Core Certification",
       specialization: "Business Analytics",
     },
   ],
@@ -91,21 +99,25 @@ const certifications = {
 // skills data
 const skills = {
   title: "My Skills",
-  description: "Skills ranging from data engineering, machine learning, to cloud infrastructure.",
+  description: "Skills ranging from data engineering and analytics to cloud infrastructure.",
   skillList: [
-    { icon: <FaPython />, name: "python" },
+    { icon: <FaPython />, name: "Python" },
     { icon: <FaDatabase />, name: "SQL" },
+    { icon: <SiSnowflake />, name: "Snowflake" },
+    { icon: <SiDbt />, name: "DBT" },
+    { icon: <FaFileExcel />, name: "Excel" },
+    { icon: <SiApache />, name: "PySpark" },
+    { icon: <SiDatabricks />, name: "Databricks" },
+    { icon: <SiTerraform />, name: "Terraform" },
+    { icon: <FaGitAlt />, name: "Git" },
     { icon: <SiTableau />, name: "Tableau" },
     { icon: <SiPowerbi />, name: "Power BI" },
     { icon: <FaAws />, name: "AWS" },
     { icon: <FaMicrosoft />, name: "Azure" },
-    { icon: <SiSnowflake />, name: "Snowflake" },
-    { icon: <SiAlteryx />, name: "Alteryx" },
-    { icon: <FaDocker />, name: "Docker" },
-    { icon: <SiApache />, name: "Pyspark" },
     { icon: <SiApacheairflow />, name: "Airflow" },
+    { icon: <SiAlteryx />, name: "Alteryx" },
     { icon: <SiOpenai />, name: "OpenAI" },
-    { icon: <SiOpenai />, name: "LLM" },
+    { icon: <SiOpenai />, name: "LLM" }
   ],
 };
 
