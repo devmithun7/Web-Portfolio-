@@ -20,7 +20,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+01) 8574235347",
+    description: "(+01) 857-423-5347",
   },
   {
     icon: <FaEnvelope />,
@@ -53,7 +53,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Reach out to me today and lets discuss how I can help you achieve your goals.
+                Reach out to me today and let's discuss how I can help you achieve your goals.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -71,7 +71,7 @@ const Contact = () => {
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
                     <SelectItem value="est">Data Analysis</SelectItem>
-                    <SelectItem value="cst">Data Pipelines</SelectItem>
+                    <SelectItem value="cst">Data Engineering</SelectItem>
                     <SelectItem value="mst">Machine Learning models</SelectItem>
                   </SelectGroup>
                 </SelectContent>
