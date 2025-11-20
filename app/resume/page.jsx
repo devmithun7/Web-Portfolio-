@@ -34,7 +34,7 @@ const experience = {
       position: "Data Analyst Intern",
       duration: "Feb 2025 - Jun 2025",
       description: "I work on turning messy data into something teams can actually use. Most of my experience sits across SQL, Tableau, DBT, Python, and Snowflake, where I build dashboards, clean datasets, and create reporting layers that teams rely on every day. I’ve built Tableau dashboards that consolidate dozens of KPIs into one view, set up DBT models to standardize data sources, and written Python and SQL tests to catch issues before they hit production. I also build Power BI and Excel reconciliation reports when governance or access tracking is needed. My focus is always the same: make the data clear, trustworthy, and ready for whoever needs it.",
-    }
+    },
     {
       company: "LTIMindtree",
       position: "Data Engineer",
