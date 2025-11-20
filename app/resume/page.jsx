@@ -33,10 +33,10 @@ import { motion } from "framer-motion";
 // about data
 const about = {
   title: "About me",
-  description: "Data Engineer & Research Assistant leveraging SQL, Python, and machine learning for optimized data and efficient solutions.",
+  description: "I bring 2 years of experience with SQL, Python, Snowflake, AWS, DBT, and PySpark building pipelines that turn messy data into clean, usable datasets. On the analytics side, I’ve used Tableau to deliver insights that actually help teams make decisions. Recently, I’ve also been working on building AI-driven tools, using modern LLMs to automate data checks, speed up analysis, and make workflows smarter. I learn fast, communicate well, and would love the chance to contribute to the team.",
   info: [
     { fieldName: "Name", fieldValue: "Dev Mithunisvar" },
-    { fieldName: "Phone", fieldValue: "(+01) 857 423 5347" },
+    { fieldName: "Phone", fieldValue: "(+01) 857-423-5347" },
     { fieldName: "Experience", fieldValue: "2 Years" },
     { fieldName: "Email", fieldValue: "devmithunisvar@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
