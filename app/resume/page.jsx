@@ -1,14 +1,34 @@
 "use client";
 
-import { FaPython, FaAws, FaDocker, FaDatabase, FaMicrosoft } from "react-icons/fa";
-import { SiTableau, SiPowerbi, SiSnowflake, SiAlteryx, SiApacheairflow, SiApache, SiOpenai } from "react-icons/si";
-import { FaPython, FaDatabase, FaAws, FaMicrosoft, FaDocker, FaGitAlt } from "react-icons/fa";
-import { SiTableau, SiPowerbi, SiSnowflake, SiAlteryx, SiApache, SiApacheairflow, SiOpenai, SiDbt, SiDatabricks, SiTerraform } from "react-icons/si";
+import { 
+  FaPython, 
+  FaAws, 
+  FaDocker, 
+  FaDatabase, 
+  FaMicrosoft,
+  FaGitAlt 
+} from "react-icons/fa";
+
+import { 
+  SiTableau, 
+  SiPowerbi, 
+  SiSnowflake, 
+  SiAlteryx, 
+  SiApache, 
+  SiApacheairflow, 
+  SiOpenai,
+  SiDbt,
+  SiDatabricks,
+  SiTerraform
+} from "react-icons/si";
+
 import { FaFileExcel } from "react-icons/fa6";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+
 
 // about data
 const about = {
