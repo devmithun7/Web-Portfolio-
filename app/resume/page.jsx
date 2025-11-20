@@ -53,7 +53,7 @@ const experience = {
       company: " Boehringer Ingelheim",
       position: "Data Analyst Intern",
       duration: "Feb 2025 - Jun 2025",
-      description: "I work on turning messy data into something teams can actually use. Most of my experience sits across SQL, Tableau, DBT, Python, and Snowflake, where I build dashboards, clean datasets, and create reporting layers that teams rely on every day. I’ve built Tableau dashboards that consolidate dozens of KPIs into one view, set up DBT models to standardize data sources, and written Python and SQL tests to catch issues before they hit production. I also build Power BI and Excel reconciliation reports when governance or access tracking is needed. My focus is always the same: make the data clear, trustworthy, and ready for whoever needs it.",
+      description: "I worked on shaping data into clear and reliable reporting. That included redesigning Tableau dashboards with analysts, building DBT and SQL models in Snowflake to standardize data, and writing Python and SQL tests to turn business rules into automated checks. I also created Power BI and Excel governance reports to keep access, usage, and data sources aligned. Overall, I focus on making data organized, trustworthy, and easy to work with.",
     },
     {
       company: "LTIMindtree",
