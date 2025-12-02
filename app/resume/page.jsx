@@ -53,7 +53,7 @@ const experience = {
       company: " Boehringer Ingelheim",
       position: "Data Analyst Co-op",
       duration: "Feb 2025 - Jun 2025",
-      description: "I worked on shaping data into clear and reliable reporting. That included redesigning Tableau dashboards with analysts, building DBT and SQL models in Snowflake to standardize data, and writing Python and SQL tests to turn business rules into automated checks. I also created Power BI and Excel governance reports to keep access, usage, and data sources aligned. Overall, I focus on making data organized, trustworthy, and easy to work with, consistently delivering clean, production-ready outputs that teams can trust every day.",
+      description: "I worked on shaping data into clear and reliable reporting. That included redesigning Tableau dashboards with analysts, building DBT and SQL models in Snowflake, and writing Python and SQL tests to automate business rules. I also created Power BI and Excel governance reports to keep access, usage, and data sources aligned. I strengthened data governance by documenting rules and improving access controls. Overall, I focus on making data organized, trustworthy, and easy to work with, consistently delivering production-ready outputs that teams trust every day.",
     },
     {
       company: "LTIMindtree",
