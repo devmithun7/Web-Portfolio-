@@ -47,7 +47,7 @@ const about = {
 // experience data
 const experience = {
   title: "My Experience",
-  description: "Data Engineer with expertise in ETL pipeline development, data visualization, and machine learning for data-driven and optimization solutions.",
+  description: "Data Analyst with expertise in ETL pipeline development, data visualization, and machine learning for data-driven and optimization solutions.",
   items: [
     {
       company: " Boehringer Ingelheim",
@@ -57,8 +57,8 @@ const experience = {
     },
     {
       company: "LTIMindtree",
-      position: "Data Engineer",
-      duration: "2021 - 2022",
+      position: "Data Analyst",
+      duration: "2021 - 2023",
       description: "I work on building reliable data pipelines that move and transform data at scale. Most of my work revolves around SQL, AWS, and PySpark, where I handle ingestion, cleaning, and modeling across different cloud sources. I focus on making pipelines fast, simple, and dependable by automating validation, optimizing transformations, and structuring data so teams can actually use it. Over time, I’ve built out analytics ready layers, automated workflows with Python, and supported teams with clean, consistent datasets that power reporting and product decisions.",
     },
     {
@@ -79,7 +79,7 @@ const education = {
       degree: "Master of Science",
       program: "Information Systems",
       institution: "Northeastern University, Boston, MA",
-      duration: "2023-Present",
+      duration: "2023-2025",
     },
     {
       degree: "Postgraduate Program",
