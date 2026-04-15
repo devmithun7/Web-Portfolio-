@@ -18,8 +18,7 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Dev Mithunisvar</span>
             </h1>
             <p className="max-w-[550px] mb-9 text-white/80">
-              Experienced Data Engineer and Machine Learning enthusiast with a strong background in SQL, Python, and ETL/ELT techniques. Skilled in developing Tableau dashboards, ETL pipelines and integrating machine learning solutions to drive insights and optimize processes.
-            </p>
+I bring 2 years of experience using SQL, Python, Snowflake, AWS, DBT, and PySpark to prepare, analyze, and improve data for reporting and business decision-making. I have built Tableau dashboards and delivered insights that helped teams track performance and make more informed decisions. Recently, I have also been working with modern LLMs to build AI-driven tools that automate data checks, support analysis, and make workflows more efficient. I learn quickly, communicate clearly, and would welcome the opportunity to contribute as a Data Analyst.            </p>
             {/* btn and socials */}
             <div className="flex flex-row items-center gap-8">
             <a href="/Resume_of_Dev_Mithunisvar_Premraj.pdf" download>
