@@ -33,7 +33,7 @@ import { motion } from "framer-motion";
 // about data
 const about = {
   title: "About me",
-  description: "I bring 2 years of experience with SQL, Python, Snowflake, AWS, DBT, and PySpark building pipelines that turn messy data into clean, usable datasets. On the analytics side, I’ve used Tableau to deliver insights that actually help teams make decisions. Recently, I’ve also been working on building AI-driven tools, using modern LLMs to automate data checks, speed up analysis, and make workflows smarter. I learn fast, communicate well, and would love the chance to contribute to the team.",
+  description: "I bring 3 years of experience using SQL, Python, Snowflake, AWS, DBT, and PySpark to prepare, analyze, and improve data for reporting and business decision-making. I have built Tableau dashboards and delivered insights that helped teams track performance and make more informed decisions. Recently, I have also been working with modern LLMs to build AI-driven tools that automate data checks, support analysis, and make workflows more efficient. I learn quickly, communicate clearly, and would welcome the opportunity to contribute as a Data Analyst.",
   info: [
     { fieldName: "Name", fieldValue: "Dev Mithunisvar" },
     { fieldName: "Phone", fieldValue: "(+01) 857-423-5347" },
